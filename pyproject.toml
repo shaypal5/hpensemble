@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 49.2.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pyright]
+include = ["hpensem"]
+exclude = ["**/node_modules",
+    "**/__pycache__",
+    "**/.pytest_cache",
+    "**/.venv",
+]
+venvPath = "/users/shaypalachy/.pyenv/versions/"
+venv = "py3"
+
+reportMissingImports = true
+reportMissingTypeStubs = false
+reportGeneralTypeIssues = false
+reportUnboundVariable = false
+
+pythonVersion = "3.10"
+pythonPlatform = "Linux"
